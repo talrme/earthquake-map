@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+#filters {
+    padding: 10px;
+    background: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+#filters label {
+    font-size: 14px;
+}
+
+#filters input[type="range"] {
+    width: 150px;
+}
+
+#map {
+    flex-grow: 1;
+    height: calc(100vh - 60px); /* Adjust based on filter height */
+    width: 100%;
+}

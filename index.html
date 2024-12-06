@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earthquake Map</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+    <div id="filters">
+        <label for="minMagnitude">Min Magnitude: <span id="minMagValue">0</span></label>
+        <input type="range" id="minMagnitude" min="0" max="10" step="0.1" value="0">
+        
+        <label for="daysFilter">Last Days: <span id="daysValue">30</span></label>
+        <input type="range" id="daysFilter" min="1" max="365" step="1" value="30">
+        
+        <button id="applyFilters">Apply Filters</button>
+    </div>
+    <div id="map"></div>
+    <script src="script.js"></script>
+</body>
+</html>
